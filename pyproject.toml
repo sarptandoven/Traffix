@@ -1,8 +1,8 @@
 # Ultralytics YOLOv5 🚀, AGPL-3.0 license
 
 # Overview:
-# This pyproject.toml file manages the build, packaging, and distribution of the Ultralytics library.
-# It defines essential project metadata, dependencies, and settings used to develop and deploy the library.
+# This pyproject.toml file manages local build metadata for Traffix, a YOLOv5-based traffic analysis project.
+# The core model code is derived from Ultralytics YOLOv5 and remains AGPL-3.0 licensed.
 
 # Key Sections:
 # - [build-system]: Specifies the build requirements and backend (e.g., setuptools, wheel).
@@ -11,9 +11,8 @@
 # - [tool.*]: Configures settings for various tools (pytest, yapf, etc.) used in the project.
 
 # Installation:
-# The Ultralytics library can be installed using the command: 'pip install ultralytics'
-# For development purposes, you can install the package in editable mode with: 'pip install -e .'
-# This approach allows for real-time code modifications without the need for re-installation.
+# For local development, create a virtual environment and run: 'pip install -r requirements.txt'.
+# Editable installs may also work with: 'pip install -e .'.
 
 # Documentation:
 # For comprehensive documentation and usage instructions, visit: https://docs.ultralytics.com
@@ -25,12 +24,12 @@ build-backend = "setuptools.build_meta"
 # Project settings -----------------------------------------------------------------------------------------------------
 [project]
 version = "7.0.0"
-name = "YOLOv5"
-description = "Ultralytics YOLOv5 for SOTA object detection, instance segmentation and image classification."
+name = "traffix"
+description = "YOLOv5-based traffic analysis and inference project."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { "text" = "AGPL-3.0" }
-keywords = ["machine-learning", "deep-learning", "computer-vision", "ML", "DL", "AI", "YOLO", "YOLOv3", "YOLOv5", "YOLOv8", "HUB", "Ultralytics"]
+keywords = ["traffic-analysis", "computer-vision", "object-detection", "segmentation", "YOLOv5", "Ultralytics"]
 authors = [
     { name = "Glenn Jocher" },
     { name = "Ayush Chaurasia" },
@@ -119,9 +118,8 @@ extra = [
 ]
 
 [project.urls]
-"Bug Reports" = "https://github.com/ultralytics/yolov5/issues"
-"Funding" = "https://ultralytics.com"
-"Source" = "https://github.com/ultralytics/yolov5/"
+"Source" = "https://github.com/sarptandoven/Traffix"
+"Upstream YOLOv5" = "https://github.com/ultralytics/yolov5/"
 
 # Tools settings -------------------------------------------------------------------------------------------------------
 [tool.pytest]

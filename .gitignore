@@ -8,3 +8,27 @@ __pycache__/
 !.env.example
 *.pem
 *.key
+
+# Python/local tooling
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# YOLO runtime outputs
+runs/
+exp*/
+
+# Large model/data artifacts
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.torchscript
+*.mp4
+*.avi
+*.mov
+*.mkv

@@ -1,8 +1,13 @@
 
-"""""
-import serial
+"""Send randomized LED durations to an Arduino over serial.
+
+This helper is interactive and is not used by the YOLO inference pipeline.
+"""
+
 import random
 import time
+
+import serial
 
 def get_serial_port():
     ports = [] # serial.tools.listports.comports()

@@ -2,6 +2,8 @@
 
 Traffix is a YOLOv5-based traffic analysis project. The repository includes detection, segmentation, classification, training, validation, and export scripts, plus a checked-in `yolov5s.pt` model for local detection experiments.
 
+This project is derived from Ultralytics YOLOv5 and keeps the upstream AGPL-3.0 license and citation files for attribution.
+
 ## Setup
 
 Use Python 3.8 or newer. A virtual environment is recommended.
@@ -22,7 +24,7 @@ Run object detection on an image, video, directory, webcam, or stream:
 python detect.py --weights yolov5s.pt --source path/to/image_or_video
 ```
 
-Results are written under `runs/detect/` by default.
+Results are written under `runs/detect/` by default. Runtime outputs, experiment folders, model weights, and videos are ignored by `.gitignore`; keep new generated artifacts out of commits unless they are intentionally documented fixtures.
 
 ## Run segmentation
 
